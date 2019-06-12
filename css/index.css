@@ -82,11 +82,22 @@ h1, h2, h3, h4, h5 {
 }
 
 .container {
-  width: 880px;
+  max-width: 1024px;
   /* TB LR */
   margin: 0 auto;
 }
-
+/* tablet-view */
+@media(max-width: 800px){
+    .container{
+        width: 98%;
+    }
+}
+/* mobile-view */
+@media(max-width: 500px){
+    .container{
+        width: 98%;
+    }
+}
 /* header */
 header{
 	display: flex;
@@ -95,9 +106,10 @@ header{
 }
 header nav {
   display: flex;
-  width: 500px;
+  width: 700px;
   vertical-align: top;
   margin-top: 35px;
+  justify-content: space-between;
 }
 
 header nav a {
@@ -125,17 +137,24 @@ header .logo {
 
 /* cta */
 .cta{
-	display:flex;
+    display:flex;
+    justify-content: flex-end;
 }
 .cta .cta-text {
   display: flex;
   vertical-align: top;
   font-size: 77px;
-  margin-top: 120px;
+  margin-top: 100px;
   text-align: center;
   padding: 0px 75px;
   flex-direction: column;
   align-items: center;
+  margin-right: 0px;
+  width: 507px;
+}
+.cta-text{
+    width:376px;
+
 }
 
 .cta .cta-text button {
