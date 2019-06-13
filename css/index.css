@@ -184,17 +184,20 @@ header .logo {
   padding-top: 39px;
   flex-direction: row;
   flex-wrap: wrap;
+  width: 1024px;
 }
 
 .main-content .top-content {
-  padding: 0 10px;
+  justify-content: space-between;
+  width: 1024px;
   display:flex;
 }
 
 .main-content .top-content .text-content {
-  width: 410px;
+  width: 480px;
   display: inline-block;
-  margin-right: 34px;
+  margin-right: 0px;
+  font-size:  large;
 }
 
 .main-content .top-content .text-content:last-child {
@@ -203,16 +206,20 @@ header .logo {
 
 .main-content .middle-img {
   margin-top: 45px;
+  width: 100%
 }
 
 .main-content .bottom-content {
-  margin-top: 37px;
-  padding: 0 10px;
-  display: flex;
+    margin-top: 37px;
+    font-size: large;
+    /* padding: 0 10px; */
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
 }
 
 .main-content .bottom-content .text-content {
-  width: 275px;
+  width: 325px;
   display: inline-block;
   margin-right: 12px;
   padding-right: 5px;
@@ -229,6 +236,7 @@ header .logo {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
+  font-size: larger;
 }
 
 .contact p {
@@ -238,7 +246,7 @@ header .logo {
 footer {
   margin: 32px 0;
   text-align: center;
-  font-size: 14px;
+  font-size: 20px;
   justify-content: center;
   align-items: center;
 }
